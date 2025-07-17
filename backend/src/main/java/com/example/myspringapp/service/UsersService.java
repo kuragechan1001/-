@@ -33,8 +33,8 @@ public class UsersService {
         }
 
         if(mailadress != null){
-            if(!mailadress.contains("@baroque-w.jp")) {//「!」つけると含まないになるらしい.
-                throw new IllegalStateException("@baroque-w.jpが含まれてません"); 
+            if(!mailadress.contains("@gmail.com")) {//「!」つけると含まないになるらしい.
+                throw new IllegalStateException("@gmail.comが含まれてません"); 
             }
 
             if(usersRepository.existsByMailadress(mailadress)) {//existsByIdでそのidが存在してるかチェックできる
